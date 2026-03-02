@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Lens</title>
+    <link rel="stylesheet" href="{{cssUri}}" />
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">🔍 Number Lens for Competitive Programmers</h2>
+        <!--number input -->
+        <input
+            type="text"
+            id="inp"
+            class="number-input"
+            placeholder="Paste numbers: 12 7 5 3 1000000007"
+            oninput="analyze()"
+        />
+        <!--feature checkboxes -->
+        <div class="checkboxes">
+            <label><input type="checkbox" id="cb_binary"   checked onchange="analyze()"> Binary</label>
+            <label><input type="checkbox" id="cb_factors"  checked onchange="analyze()"> Prime Factors</label>
+            <label><input type="checkbox" id="cb_divcount" checked onchange="analyze()"> Divisor Count</label>
+            <label><input type="checkbox" id="cb_sq"       checked onchange="analyze()"> Perfect Square</label>
+            <label><input type="checkbox" id="cb_prime"    checked onchange="analyze()"> Is Prime</label>
+            <label><input type="checkbox" id="cb_xor"      checked onchange="analyze()"> XOR / AND / OR</label>
+        </div>
+        <div id="output"></div>
+        <div id="summary"></div>  
+    </div>
+    <script src="{{jsUri}}"></script>
+</body>
+</html>

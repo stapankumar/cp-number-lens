@@ -1,7 +1,11 @@
 {
-  "name": "cp-bit-lens",
-  "displayName": "CP Bit Lens",
-  "description": "Bit visualizer for competitive programmers",
+  "name": "cp-number-lens",
+  "displayName": "Number Lens for Competitive Programmers",
+  "description": "Visualize numbers, bits, primes, and XOR instantly inside VS Code.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stapankumar/cp-number-lens"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.80.0"
@@ -12,12 +16,25 @@
     "onLanguage:python"
   ],
   "main": "./extension.js",
+  "icon": "media/icon.png",
   "contributes": {
     "commands": [
       {
-        "command": "cp-bit-lens.openPanel",
-        "title": "CP Bit Lens: Open Panel"
+        "command": "cp-number-lens.openPanel",
+        "title": "Number Lens: Open Panel"
       }
     ]
-  }
+  },
+  "categories": [
+    "Other",
+    "Programming Languages"
+  ],
+  "keywords": [
+    "competitive programming",
+    "bitmask",
+    "binary",
+    "prime",
+    "cp",
+    "number analysis"
+  ]
 }
